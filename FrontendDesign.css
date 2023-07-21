@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes running-logo {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.logo {
+    animation: running-logo 10s linear infinite;
+    margin-right: 2rem; /* Adjust the spacing between logos */
+    flex-shrink: 0; /* Prevent logos from shrinking when container is too small */
+}
